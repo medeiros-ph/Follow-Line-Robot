@@ -1,18 +1,19 @@
-#define echo 8
-#define trig 9
+#define echo 5
+#define trig 4
 
 void trigPuls(); //Função que gera o pulso de trigger
 
 float pulse;    // Variável que armazena o tempo de duração do echo
 float dist_cm;  // Variável que armazena o valor da distância em centimetros
 
-void setup() {
+void setup()
+{
   pinMode(trig, OUTPUT);  // Pino de Trgger sera saida digital
   pinMode(echo, INPUT);   // Pino de Echo sera entrada digital
 
   digitalWrite(trig, LOW);  //Saida trigger inicia em nivel baixo
 
-  Serial.begin(9600);  // Inicia comunicacao serial
+  Serial.begin(115200);  // Inicia comunicacao serial
   
 }
 
